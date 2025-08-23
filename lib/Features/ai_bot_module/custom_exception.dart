@@ -1,19 +1,3 @@
-// class CustomException implements Exception {
-//   final String message;
-
-//   CustomException(this.message);
-
-//   @override
-//   String toString() => message;
-// }
-
-// class NetworkException extends CustomException {
-//   NetworkException(super.message);
-// }
-
-// class ServerException extends CustomException {
-//   ServerException(super.message);
-// }
 
 // # =============================================================================
 // # 2. EXCEPTION HANDLING - Error Management System

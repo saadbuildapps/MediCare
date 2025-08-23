@@ -13,7 +13,7 @@ import '../Paths/imports.dart';
 //!::::::::::::::::::::   I Have Seen this   :::::::::::::::::::
 
 //! New Arrival Tile Resource/Widget
-//! This widget is used to display a product in HomeScreen +  ChooseBrandScreen + AllArrivalScreen + FavouriteListScreen
+//! This widget is used to display a product in HomeScreen +  + AllArrivalScreen + FavouriteListScreen
 class NewArrivalTile extends StatefulWidget {
   final List image;
   final String description;
@@ -46,11 +46,11 @@ class NewArrivalTile extends StatefulWidget {
 
 class _NewArrivalTileState extends State<NewArrivalTile> {
   bool wish = false;
-  final snapshotRef = FirebaseFirestore.instance
-      .collection('Wishlist')
-      .doc(FirebaseAuth.instance.currentUser!.uid)
-      .collection('WishlistItem')
-      .snapshots();
+  // final snapshotRef = FirebaseFirestore.instance
+  //     .collection('Wishlist')
+  //     .doc(FirebaseAuth.instance.currentUser!.uid)
+  //     .collection('WishlistItem')
+  //     .snapshots();
 
   Future<void> getWishListId() async {
     final userId = FirebaseAuth.instance.currentUser!.uid;
@@ -149,7 +149,7 @@ class _NewArrivalTileState extends State<NewArrivalTile> {
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: const Icon(
-                                Icons.medical_services_outlined,
+                                Icons.medical_services,
                                 color: Colors.teal,
                                 size: 40,
                               ),

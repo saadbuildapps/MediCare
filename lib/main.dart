@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:laza/Features/Address/provider/addressProvider.dart';
 import 'package:laza/Features/SpalshScreen/SplashScreen.dart';
@@ -45,7 +44,7 @@ class MyApp extends StatelessWidget {
         // Existing providers
         // ChangeNotifierProvider(create: (_) => GenderProvider()),
         ChangeNotifierProvider(create: (_) => TimerProvider()),
-        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        // ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => ProductDetailProvider()),
         ChangeNotifierProvider(create: (_) => SizeSelectorProvider()),
         ChangeNotifierProvider(create: (_) => StarSliderProvider()),

@@ -11,7 +11,7 @@ import 'package:laza/Resources/Navigators/navigators.dart';
 import 'package:laza/Features/Cart/Screens/cart_screen.dart';
 import '../../Resources/MediaQuery/media_query.dart';
 import '../../Resources/NavigationBar/nav_bar.dart';
-import '../../Resources/Paths/imports.dart';
+import '../../Resources/Paths/imports.dart' hide MediCareTheme;
 
 class ConfirmOrderScreen extends StatefulWidget {
   const ConfirmOrderScreen({super.key});

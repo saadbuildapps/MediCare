@@ -333,13 +333,6 @@ Include: symptoms, diagnosis, medications, recommendations.
 // # 6. CHAT CONTROLLER - State Management (Provider)
 // # =============================================================================
 
-// // chat_controller.dart
-// import 'package:flutter/material.dart';
-// import 'package:image_picker/image_picker.dart';
-// import 'package:uuid/uuid.dart';
-
-/// Main controller managing chat state and UI interactions
-/// Uses Provider for state management across the app
 class AIChatController extends ChangeNotifier {
   final EnhancedAIRepository _aiRepository;
   final List<ChatMessage> _messages = []; // All chat messages
@@ -491,65 +484,6 @@ class AIChatController extends ChangeNotifier {
   }
 }
 
-// # =============================================================================
-// # 8. MAIN APP ENTRY POINT
-// # =============================================================================
-
-// // main.dart
-// import 'package:flutter/material.dart';
-// import 'package:provider/provider.dart';
-// import 'package:google_fonts/google_fonts.dart';
-
-// void main() {
-//   runApp(const MedicalAIApp());
-// }
-
-// /// Main app with medical theme and provider setup
-// class MedicalAIApp extends StatelessWidget {
-//   const MedicalAIApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ChangeNotifierProvider(
-//       create: (context) => AIChatController(),
-//       child: MaterialApp(
-//         title: 'Dr. MediCare AI',
-//         debugShowCheckedModeBanner: false,
-//         theme: ThemeData(
-//           primarySwatch: Colors.teal,
-//           primaryColor: const Color(0xFF009798),
-//           scaffoldBackgroundColor: const Color(0xFFF5F6F5),
-//           textTheme: GoogleFonts.poppinsTextTheme(),
-//           appBarTheme: const AppBarTheme(
-//             backgroundColor: Color(0xFF009798),
-//             foregroundColor: Colors.white,
-//             elevation: 0,
-//           ),
-//           elevatedButtonTheme: ElevatedButtonThemeData(
-//             style: ElevatedButton.styleFrom(
-//               backgroundColor: const Color(0xFF009798),
-//               foregroundColor: Colors.white,
-//               shape: RoundedRectangleBorder(
-//                 borderRadius: BorderRadius.circular(15),
-//               ),
-//             ),
-//           ),
-//           inputDecorationTheme: InputDecorationTheme(
-//             border: OutlineInputBorder(
-//               borderRadius: BorderRadius.circular(15),
-//               borderSide: const BorderSide(color: Color(0xFF009798)),
-//             ),
-//             focusedBorder: OutlineInputBorder(
-//               borderRadius: BorderRadius.circular(15),
-//               borderSide: const BorderSide(color: Color(0xFF009798), width: 2),
-//             ),
-//           ),
-//         ),
-//         home: const AIChatView(),
-//       ),
-//     );
-//   }
-// }
 
 // # =============================================================================
 // # 9. ADDITIONAL FEATURES (Optional Enhancements)

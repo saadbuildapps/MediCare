@@ -1,13 +1,3 @@
-// class ChatMessage {
-//   final String content;
-//   final bool isUser;
-
-//   ChatMessage({required this.content, required this.isUser});
-// }
-
-
-
-
 
 //! chat_message.dart
 //! Individual chat message model

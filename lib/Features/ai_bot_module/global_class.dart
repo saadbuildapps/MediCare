@@ -1,8 +1,4 @@
 
-// class GlobalVariables {
-//   static const String geminiApiKey = 'AIzaSyD6-tbv7zb-ZXYdEWIV0IiJoIiZoOSBdnw'; // Store securely in .env or equivalent
-//   static const String baseApiUrl = 'https://generativelanguage.googleapis.com'; // Official Gemini API base URL
-// }
 
 
 // # =============================================================================

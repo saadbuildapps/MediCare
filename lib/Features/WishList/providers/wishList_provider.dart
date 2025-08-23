@@ -29,41 +29,7 @@ class WishlistProvider extends ChangeNotifier {
   changeColor();
     notifyListeners();
   }
-  //
-  //
-  // List<WishlistModel> wishlist = [];
-  //
-  // Future getWishlist() async {
-  //
-  //   List<WishlistModel> wishDataList = [];
-  //   QuerySnapshot<Map<String, dynamic>> dataRef = await FirebaseFirestore.instance.collection('Wishlist')
-  //       .doc(FirebaseAuth.instance.currentUser!.uid).collection('WishlistItem')
-  //       .get();
-  //
-  //   dataRef.docs.forEach((element) {
-  //     WishlistModel modaldata = WishlistModel(
-  //       Producttype: element.get('ProductId'),
-  //       Productname:element.get('ProductId'),
-  //       ProductimagePath:element.get('ProductId'),
-  //       Size:element.get('ProductId'),Productdescription: element.get('ProductId'),
-  //       ProductReviews:element.get('ProductId'), Productprice: element.get('ProductId'),
-  //       productId: element.get('ProductId'),
-  //       Status: element.get('Status')
-  //     );
-  //     wishDataList.add(modaldata);
-  //   });
-  //   wishlist = wishDataList;
-  //   notifyListeners();
-  // }
-  //
-  // get wishlistdata {
-  //   print('data');
-  //   return wishlist;
-  // }
-  //
-
-
-
+ 
 
   removeFromWishList(ProductID, context) {
 

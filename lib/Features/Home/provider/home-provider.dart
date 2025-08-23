@@ -36,7 +36,7 @@ try{
   productList = productDataList;
   search('');
   print('ProductList $productList');
-  notifyListeners();
+  notifyListeners(); 
 }catch(e){
   Toastmassage.ErrorToast( context ,e.toString());
 }
@@ -49,7 +49,8 @@ try{
     if (searchQuery.isNotEmpty) {
       filteredProductList = productList.where((product) {
         return product.Productdescription.toLowerCase().contains(searchQuery.toLowerCase()) == true ||
-            (product.Productname ?? '').toLowerCase().contains(searchQuery.toLowerCase()) == true ||
+            (product.Productname ?? '').toLowerCase().contains(searchQuery.toLowerCase()) == true   
+            ||
             product.ProductBrand.toLowerCase().contains(searchQuery.toLowerCase()) == true;
       }).toList();  // <-- convert Iterable to List here
 
